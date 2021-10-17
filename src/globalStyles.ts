@@ -14,6 +14,12 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  @media (min-width: 576px) {
+    body {
+      background-color: #e1e1e1;
+    }
+  }
 `;
 
 export default GlobalStyle;

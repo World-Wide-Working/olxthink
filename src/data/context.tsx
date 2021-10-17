@@ -40,16 +40,18 @@ export type AIData = {
 type ProviderProps = { children: ReactNode };
 type StateContexProps = {
   data: AIData | Record<string, unknown>;
+  // eslint-disable-next-line
   setImage: (image: any) => void;
   user: User;
 };
 
 const StateContext = createContext<StateContexProps | undefined>(undefined);
 
-function Provider({ children }: ProviderProps) {
+function Provider({ children }: ProviderProps): JSX.Element {
   const service = new Service();
   const [data, setData] = useState({});
 
+  // eslint-disable-next-line
   const setImage = (image: any) => {
     setData(service.getAIData(image));
   };
@@ -61,7 +63,7 @@ function Provider({ children }: ProviderProps) {
   );
 }
 
-function useThink() {
+function useThink(): StateContexProps {
   const context = useContext(StateContext);
   if (context === undefined) {
     throw new Error('useCount must be used within a Provider');

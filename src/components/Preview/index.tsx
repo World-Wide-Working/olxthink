@@ -7,7 +7,7 @@ type Props = {
   image: string;
 };
 
-const Preview = ({ image, handleReset }: Props) => {
+const Preview = ({ image, handleReset }: Props): JSX.Element => {
   return (
     <>
       <S.PreviewContainer>
