@@ -7,11 +7,11 @@ type Props = {
   handleImage: (hasImage: boolean) => void;
 };
 
-const Camera = ({ onSubmit, handleImage }: Props) => {
+const Camera = ({ onSubmit, handleImage }: Props): JSX.Element => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [preview, setPreview] = useState<string | null>(null);
 
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
     if (!event.target.files?.length) return;
     const value = URL.createObjectURL(event.target.files[0]);
     setPreview(value);

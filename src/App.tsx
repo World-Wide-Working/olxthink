@@ -16,14 +16,16 @@ function App(): JSX.Element {
     <Provider>
       <Router>
         <GlobalStyle />
-        <OlxHeader />
-        <S.ContentWrapper>
-          <Switch>
-            <Route path="/" exact component={ClassicAdvertisement} />
-            <Route path="/think" exact component={Think} />
-            <Route path="/camera" component={Camera} />
-          </Switch>
-        </S.ContentWrapper>
+        <S.Container>
+          <OlxHeader />
+          <S.ContentWrapper>
+            <Switch>
+              <Route path="/" exact component={ClassicAdvertisement} />
+              <Route path="/think" exact component={Think} />
+              <Route path="/camera" component={Camera} />
+            </Switch>
+          </S.ContentWrapper>
+        </S.Container>
       </Router>
     </Provider>
   );
