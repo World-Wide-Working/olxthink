@@ -37,10 +37,14 @@ export const ImageContainer = styled.div`
   height: 100%;
   overflow: hidden;
   padding-top: 10px;
+  max-width: 100%;
+  overflow-x: hidden;
 `;
 
 export const Image = styled.img`
   width: 100%;
   height: fit-content;
   border-radius: 5px;
+  max-width: 100%;
+  overflow-x: hidden;
 `;
