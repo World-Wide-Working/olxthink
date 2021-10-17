@@ -13,6 +13,7 @@ import { Advertisement } from '../../types';
 import OlxPayInfo from '../../components/OlxPayInfo';
 import Button from '../../components/Button';
 import { ROUTER_PATHS } from '../../constants/router';
+import * as S from './styles';
 
 const Think = (): JSX.Element | null => {
   const { data } = useThink();
@@ -45,7 +46,27 @@ const Think = (): JSX.Element | null => {
       <br />
       <SecureCard />
       <br />
-      <Button>Submit</Button>
+      <S.Text>
+        <p>
+          Ao publicar você concorda e aceita nossos{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://ajuda.olx.com.br/s/article/termos-e-condicoes-de-uso"
+          >
+            Termos de Uso
+          </a>
+          e{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://ajuda.olx.com.br/s/article/politica-de-privacidade"
+          >
+            Privacidade
+          </a>
+        </p>
+      </S.Text>
+      <Button>Enviar anúncio</Button>
     </>
   );
 };
