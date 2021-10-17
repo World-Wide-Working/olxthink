@@ -1,0 +1,65 @@
+{
+  "user": {
+    "name": "Helisa",
+    "contact": "0119984182788"
+  },
+  "advertisement": [
+    {
+      "form": {
+        "title": "Vendo móvel de gavetas com chave",
+        "description": "Móvel em perfeito estado de conservação e o material é de primeira qualidade. Faço entrega a depender da localização. Para mais informações entre em contato.Formas de pagamento: pix, a vista ou no cartão.",
+        "category": "comercio-e-escritorio",
+        "categoryName": "Comércio e escritório",
+        "state": "GOOD",
+        "price": 200.0
+      },
+      "image": "https://img.olx.com.br/images/17/176104451247540.jpg",
+      "suggestion": {
+        "quote": {
+          "max": 30.0,
+          "min": 19.2,
+          "average": 200.0
+        },
+        "sustainability": {}
+      }
+    },
+    {
+      "form": {
+        "title": "Elastic jump",
+        "description": "Cama elástica para exercícios em casa, usada apenas uma vez.",
+        "category": "esportes-e-lazer",
+        "categoryName": "Esportes e lazer",
+        "state": "EXCELLENT",
+        "price": 220.0
+      },
+      "image": "https://img.olx.com.br/images/04/048122339779247.jpg",
+      "suggestion": {
+        "quote": {
+          "max": 270.0,
+          "min": 190.0,
+          "average": 220.0
+        },
+        "sustainability": {}
+      }
+    },
+    {
+      "form": {
+        "title": "Moto serra vulcan",
+        "description": "Moto serra vulcan,semi nova,usada só 2x",
+        "category": "agro-e-industria",
+        "categoryName": "Agro e indústria",
+        "state": "EXCELLENT",
+        "price": 800.0
+      },
+      "image": "https://img.olx.com.br/images/17/172169334016520.jpg",
+      "suggestion": {
+        "quote": {
+          "max": 734.0,
+          "min": 1020.2,
+          "average": 800.0
+        },
+        "sustainability": {}
+      }
+    }
+  ]
+}
