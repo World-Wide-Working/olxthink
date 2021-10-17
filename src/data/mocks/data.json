@@ -16,8 +16,8 @@
       "image": "https://img.olx.com.br/images/17/176104451247540.jpg",
       "suggestion": {
         "quote": {
-          "max": 30.0,
-          "min": 19.2,
+          "max": 312.0,
+          "min": 190,
           "average": 200.0
         },
         "sustainability": {}
