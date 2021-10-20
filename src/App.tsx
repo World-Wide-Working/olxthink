@@ -10,6 +10,7 @@ import GlobalStyle from './globalStyles';
 import * as S from './styles';
 import { Provider } from './data/context';
 import Think from './pages/Think';
+import Success from './pages/Success';
 
 function App(): JSX.Element {
   return (
@@ -23,6 +24,7 @@ function App(): JSX.Element {
               <Route path="/" exact component={ClassicAdvertisement} />
               <Route path="/think" exact component={Think} />
               <Route path="/camera" component={Camera} />
+              <Route path="/success" component={Success} />
             </Switch>
           </S.ContentWrapper>
         </S.Container>

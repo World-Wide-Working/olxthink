@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import OlxTitle from '../../components/OlxTitle';
@@ -19,9 +19,14 @@ const Think = (): JSX.Element | null => {
   const { data } = useThink();
   const history = useHistory();
 
-  const handleReset = () => {
+  const handleReset = useCallback(() => {
     history.push(ROUTER_PATHS.HOME);
-  };
+  }, [history]);
+
+  const handleButtonClick = useCallback(
+    () => history.push(ROUTER_PATHS.SUCCESS),
+    [history]
+  );
 
   if (!data) {
     history.push(ROUTER_PATHS.HOME);
@@ -55,7 +60,7 @@ const Think = (): JSX.Element | null => {
             href="https://ajuda.olx.com.br/s/article/termos-e-condicoes-de-uso"
           >
             Termos de Uso
-          </a>
+          </a>{' '}
           e{' '}
           <a
             target="_blank"
@@ -66,7 +71,7 @@ const Think = (): JSX.Element | null => {
           </a>
         </p>
       </S.Text>
-      <Button>Enviar anúncio</Button>
+      <Button onClick={handleButtonClick}>Enviar anúncio</Button>
     </>
   );
 };
